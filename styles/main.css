@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-serif);
+  background: linear-gradient(90deg, rgb(26, 42, 62) 0%, rgb(11, 20, 30) 100%);
+  color: var(--foreground-1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+a {
+  all: unset;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+  box-shadow: var(--foreground-1) 0px 0px 0px 2px !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+#__next {
+  min-height: 100vh;
+}
+
+/* pagination */
+.disabled {
+  opacity: 0.1;
+}
+
+.disabled a {
+  cursor: not-allowed;
+}
+
+.headerMain {
+  background: linear-gradient(90deg, rgb(26, 42, 62) 0%, rgb(11, 20, 30) -25%);
+}
+
+.sidebarMain {
+  background: linear-gradient(90deg, rgb(26, 42, 62) 0%, rgb(11, 20, 30) -25%);
+}
+
+.lobbyBg {
+  background: linear-gradient(90deg, rgb(26, 42, 62) 0%, rgb(11, 20, 30) 100%);
+}
+
+.button {
+  --color: #512da8;
+  width: 8em;
+  height: 2.5em;
+  line-height: px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color .5s;
+  z-index: 1;
+  border-radius: 10px;
+  font-weight: 500;
+  color: var(--color);
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+}
+
+.button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.button:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+}
+
+@media screen and (min-width: 1100px) {
+  .logoIcon {
+    display: none;
+  }
+}
+
+.sidebarIcon1 {
+  display: none;
+}
+
+@media screen and (max-width: 1111px) {
+  .menuRes {
+    transform: translateX(-100vw);
+  }
+  .responsiveNav {
+    transform: none;
+  }
+  .sidebarIcon {
+    display: none;
+  }
+  .sidebarIcon1 {
+    display: none;
+  }
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

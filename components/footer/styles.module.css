@@ -1,0 +1,8 @@
+.footer {
+  background: linear-gradient(90deg, rgb(26, 42, 62) 0%, rgb(11, 20, 30) -25%);
+  position: sticky;
+  width: 100%;
+  top: 100%;
+  padding: 10px;
+  text-align: center;
+}

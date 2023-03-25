@@ -1,0 +1,16 @@
+.cta {
+  display: flex;
+  font-size: 1.6rem;
+  padding: 0.67rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: var(--boxshadow-1);
+  border-radius: var(--br-1);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.icon {
+  display: flex;
+}

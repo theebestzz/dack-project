@@ -1,0 +1,40 @@
+.platform svg {
+  font-size: 5rem;
+  margin-bottom: var(--gap-2);
+}
+
+.platform {
+  font-size: var(--fs-700);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: var(--br-2);
+  padding: 1.5rem 1rem;
+  background-color: var(--background-4);
+  text-align: center;
+}
+
+.tit {
+  align-items: center;
+  text-align: center;
+  color: var(--foreground-1);
+  margin-bottom: 25px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+}
+
+@media only screen and (min-width: 450px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap');
+
+:root {
+  --background-1: hsl(240, 100%, 98%);
+  --background-2: hsl(240, 100%, 97%);
+  --background-3: hsl(240, 100%, 92%);
+  --background-4: hsl(240, 100%, 95.9%);
+
+  --foreground-1: hsl(0, 0%, 0%);
+  --foreground-2: hsl(214, 8%, 50%);
+  --foreground-3: ;
+
+  --boxshadow-1: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  --boxshadow-2: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+  --clr-active-1: hsl(247, 82%, 66%);
+  --clr-active-2: hsl(247, 82%, 76%);
+
+  --br-1: 0.2rem;
+  --br-2: 0.7rem;
+  --br-3: 1.5rem;
+
+  --ff-serif: 'Inter', sans-serif;
+
+  --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+  --fs-800: 3.5rem;
+  --fs-700: 1.5rem;
+  --fs-600: 1.25rem;
+  --fs-500: 1rem;
+  --fs-400: 0.9375rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+
+  --max-width: 60rem;
+
+  --zindex-nav: 1000;
+
+  --gap-1: 1rem;
+  --gap-2: 2rem;
+  --gap-3: 3rem;
+  --gap-4: 4rem;
+  --gap-5: 5rem;
+}
+
+[data-theme='dark'] {
+  --background-2: hsl(215, 21%, 11.9%); 
+  --background-3: hsl(215, 21%, 15.9%);
+  --background-4: hsl(215, 21%, 15.9%);
+
+  --clr-active-2: hsl(247, 82%, 76%);
+
+  --foreground-1: rgb(255, 255, 255);
+  --foreground-2: rgb(176, 176, 189);
+  --foreground-3: ;
+
+  --boxshadow-1: rgba(140, 140, 150, 0.329) 0px 0px 0px 1px;
+  --boxshadow-2: rgba(0, 0, 0, 0.5) 0px 25px 20px -20px;
+}

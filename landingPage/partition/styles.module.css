@@ -1,0 +1,42 @@
+.title {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.info {
+  margin: var(--gap-1) auto;
+}
+
+.text {
+  text-align: center;
+}
+
+.image {
+  max-width: 10rem;
+  margin: auto;
+  margin-bottom: var(--gap-1);
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 700px) {
+  .container {
+    display: flex;
+    gap: var(--gap-3);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .image {
+    margin: 0;
+    max-width: 15rem;
+  }
+
+  .text {
+    text-align: left;
+  }
+
+  .rtl {
+    flex-direction: row-reverse;
+  }
+}

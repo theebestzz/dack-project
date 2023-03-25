@@ -1,0 +1,44 @@
+.gamesTitle {
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+.gamesMain {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gamesLink {
+  transition: all 0.5s ease-in-out;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.gamesLink:hover {
+  transform: scale(1.1);
+}
+
+.gamesLink img {
+  border-radius: 50px;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .5;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .gamesTitle {
+    font-size: 30px;
+  }
+}
